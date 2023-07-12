@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "iranyekan" ;
+    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
+    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+}
+@font-face {
+    font-family: "iranyekan_numbers" ;
+    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
+    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'iranyekan_numbers','iranyekan';
+    background-color: rgb(19, 19, 22);
+}
+.container1 {
+    width: 90%;
+    margin: 0 auto;
+}
+nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav .nav--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 10%;
+}
+nav .hover {
+    width: 15%;
+}
+nav .nav--flex .nav--left {
+    color: white;
+}
+nav .nav--flex .nav--right a {
+    color: white;
+}
+nav .nav--flex .nav--right a:hover {
+    color: rgb(137, 137, 139);
+}
+.section1 {
+    width: 25%;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+section .section--icon {
+    width: 40px;
+    background-color: rgb(35, 35, 42);
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.3rem 0;
+}
+.section2 b {
+    font-size: 6.7rem;
+    color: white;
+    line-height: 9rem;
+}
+.section2 p {
+    color: white;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+.container2 {
+    width: 85%;
+}
+.container2 section {
+    position: relative;
+}
+.container2 section .section--input {
+    border-radius: 1rem;
+}
+.container2 section .section--a {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+@media (max-width:1500px) {
+    .container1 {
+        width: 95%;
+    }
+    .section1 {
+        margin-bottom: 3rem;
+    }
+    .section2 b {
+        font-size: 5rem;
+        line-height: 6.5rem;
+    }
+} 
+@media (max-width:800px) {
+    nav .nav--flex {
+        width: 15%;
+    }
+    nav .hover {
+        width: 20%;
+    }
+    .section1 {
+        width: 40%;
+        margin: 4rem auto;
+    }
+    .section2 {
+        text-align: center;
+    }
+    .section2 b {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+}
+@media (max-width:600px) {
+    nav .hover {
+        width: 25%;
+    }
+}
