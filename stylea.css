@@ -24,10 +24,11 @@ body {
     background-color: rgb(19, 19, 22);
 }
 .container1 {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 nav {
+    width: 100%;
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
@@ -36,14 +37,24 @@ nav {
 nav .nav--flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 10%;
+    justify-content: space-between;
+    width: 8%;
+}
+nav .nav--flex .nav__left {
+    width: 40%;
+}
+nav .nav--flex .svg {
+    width: 25px;
+    height: 35px;
+    border-radius: 0.3rem;
+    background-color: white;
 }
 nav .hover {
-    width: 15%;
+    width: 10%;
 }
 nav .nav--flex .nav--left {
     color: white;
+    font-size: 1.4rem;
 }
 nav .nav--flex .nav--right a {
     color: white;
@@ -74,22 +85,107 @@ section .section--icon {
     font-size: 1.3rem;
 }
 .container2 {
-    width: 85%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
-.container2 section {
+.container2 .section3 {
     position: relative;
-}
-.container2 section .section--input {
-    border-radius: 1rem;
-}
-.container2 section .section--a {
     display: flex;
     flex-direction: row;
-    position: absolute;
+    width: 70%;
 }
-@media (max-width:1500px) {
+.container2 section .section__input {
+    width: 450px;
+}
+.container2 section .section__input input {
+    border-radius: 2rem;
+    width: 100%;
+    background-color: unset;
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+.container2 section .section__a a {
+    position: absolute;
+    top: 0.5rem;
+    left: 20rem;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.5rem 0 0px 1rem;
+    color: white;
+    border-radius: 2rem;
+    background-color: rgb(118, 54, 153);
+}
+.container2 section .section__a a:hover {
+    background-color: rgb(118, 100, 153);
+}
+.container2 section .section__a .a__text {
+    width: 80%;
+}
+.container2 section .section__a .a__svg {
+    width: 20%;
+}
+.container3 {
+    width: 85%;
+    margin: 0 auto;
+    color: rgb(137, 137, 139);
+    font-size: 0.8rem;
+}
+.container3 .Sincerely {
+    color: white;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+.container3 .flex {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+}
+.container3 .flex .flex__grid {
+    width: 30%;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.container3 .flex .flex__grid .flex__grid--img {
+    position: absolute;
+    width: 20%;
+}
+.container3 .flex .flex__grid .two {
+    left: 3rem;
+}
+.container3 .flex .flex__grid .flex__grid--img:hover {
+    z-index: 3;
+}
+.container3 .flex .flex__grid .three {
+    left: 6rem;
+}
+.container3 .flex .flex__grid .four {
+    left: 9rem;
+}
+.container3 .flex .flex__grid .five {
+    left: 12rem;
+}
+.container3 .flex .flex__grid img {
+    width: 100%;
+    border-radius: 2.5rem;
+    border: 2px solid black;
+}
+.container3 .flex .flex__text {
+    width: 55%;
+}
+@media (max-width:1200px) {
     .container1 {
         width: 95%;
+    }
+    nav .nav--flex {
+        width: 13%;
     }
     .section1 {
         margin-bottom: 3rem;
@@ -97,6 +193,9 @@ section .section--icon {
     .section2 b {
         font-size: 5rem;
         line-height: 6.5rem;
+    }
+    .container2 {
+        width: 95%;
     }
 } 
 @media (max-width:800px) {
@@ -117,9 +216,37 @@ section .section--icon {
         font-size: 3rem;
         line-height: 3.5rem;
     }
+    .container2 {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .container2 section .section__input {
+        width: 300px;
+    }
+    .container2 section .section__input input {
+        padding: 1rem;
+    }
+    .container2 section .section__a a {
+        top: 0.4rem;
+        left: 13rem;
+        width: 100px;
+        padding: 0.5rem 0 0px 1rem;
+        font-size: 0.75rem;
+    }
+    .container3 {
+        text-align: center;
+    }
 }
 @media (max-width:600px) {
+    nav .nav--flex {
+        width: 20%;
+    }
     nav .hover {
         width: 25%;
+    }
+    .container2 section .section__a a {
+        left: 11.5rem;
     }
 }
