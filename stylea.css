@@ -41,7 +41,7 @@ nav .nav--flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 8%;
+    width: 10%;
 }
 nav .nav--flex .nav__left {
     width: 40%;
@@ -51,9 +51,6 @@ nav .nav--flex .svg {
     height: 35px;
     border-radius: 0.3rem;
     background-color: white;
-}
-nav .hover {
-    width: 10%;
 }
 nav .nav--flex .nav--left {
     color: white;
@@ -143,7 +140,7 @@ section .section--icon {
     font-size: 2rem;
 }
 .container3 .flex {
-    width: 90%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     margin-bottom: 3rem;
@@ -167,8 +164,7 @@ section .section--icon {
     border: 2px solid black;
 }
 .container3 .flex .flex__text {
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
+    margin-left: 1.5rem;
 }
 .footer__head {
     display: flex;
@@ -196,7 +192,7 @@ section .section--icon {
 .footer__head .padding__text {
     margin: 0 auto;
     border-radius: 0.3rem;
-    width:80%;
+    width: 80%;
     background-color: rgb(28, 28, 33);
     text-align: center;
 }
@@ -213,8 +209,11 @@ section .section--icon {
     .container1 {
         width: 95%;
     }
-    nav .nav--flex {
-        width: 13%;
+    nav .pierre {
+        width: 12%;
+    }
+    nav .hover {
+        width: 14%;
     }
     .section1 {
         margin-bottom: 3rem;
@@ -225,6 +224,9 @@ section .section--icon {
     }
     .container2 {
         width: 95%;
+    }
+    .container3 .flex {
+        width: 90%;
     }
 } 
 @media (max-width:800px) {
@@ -261,7 +263,7 @@ section .section--icon {
         padding: 1rem;
     }
     .container2 section .section__a a {
-        margin-left: -100px;
+        margin-left: -90px;
         width: 100px;
         padding: 0.5rem 0 0px 1rem;
         font-size: 0.75rem;
@@ -289,6 +291,9 @@ section .section--icon {
     }
     .container3 .footer__img img {
         border-radius: 0;
+    }
+    .container3 .footer__img img {
+        float: right;
     }
 }
 @media (max-width:600px) {
